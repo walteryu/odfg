@@ -5,4 +5,7 @@
 This project contains code for the Open Data for Good Grand Challenge entry.
 
 Please refer to the official [website][00.00] for details.
+
+More text for the readme...
+
 [00.00]: https://www.challenge.gov/challenge/open-data-for-good-grand-challenge/
