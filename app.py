@@ -36,7 +36,20 @@ data = data.query("type == 'conventional' and region == 'Albany'")
 data["Date"] = pd.to_datetime(data["Date"], format="%Y-%m-%d")
 data.sort_values("Date", inplace=True)
 
-app = dash.Dash(__name__)
+# need to set server for deployment
+# app = dash.Dash(__name__)
+# server = app.server
+
+external_stylesheets = [
+    {
+        "href": "https://fonts.googleapis.com/css2?"
+        "family=Lato:wght@400;700&display=swap",
+        "rel": "stylesheet",
+    },
+]
+app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
+app.title = "Avocado Analytics: Understand Your Avocados!"
+# need to set server for deployment
 server = app.server
 
 app.layout = html.Div(
