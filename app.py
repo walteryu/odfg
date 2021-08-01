@@ -39,6 +39,7 @@ data = pd.read_csv("daily_42602_2021_no2.csv")
 # data conversions
 data["ArithmeticMean"] = data["ArithmeticMean"].astype(float)
 data["AQI"] = data["AQI"].astype(int)
+data["region"] = data["region"].astype(str)
 data["Date"] = pd.to_datetime(data["Date"], format="%Y-%m-%d")
 data.sort_values("Date", inplace=True)
 
