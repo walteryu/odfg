@@ -64,9 +64,8 @@ app.layout = html.Div(
                     children="Avocado Analytics", className="header-title"
                 ),
                 html.P(
-                    children="Analyze the behavior of avocado prices"
-                    " and the number of avocados sold in the US"
-                    " between 2015 and 2018",
+                    children="EPA Air Data Visualization"
+                    " Nitrogen Dioxide Measurements",
                     className="header-description",
                 ),
             ],
