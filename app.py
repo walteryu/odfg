@@ -103,7 +103,7 @@ app.layout = html.Div(
                                 {"label": avocado_type, "value": avocado_type}
                                 for avocado_type in data.type.unique()
                             ],
-                            value="organic",
+                            value="South DeKalb",
                             clearable=False,
                             searchable=False,
                             className="dropdown",
@@ -179,7 +179,7 @@ def update_charts(region, avocado_type, start_date, end_date):
         "layout": {
             "title": {
                 "text": "Daily Measurement (Arithmetic Mean)",
-                "x": 0.5,
+                "x": 0.05,
                 "xanchor": "left",
             },
             "xaxis": {"fixedrange": True},
@@ -197,7 +197,11 @@ def update_charts(region, avocado_type, start_date, end_date):
             },
         ],
         "layout": {
-            "title": {"text": "AQI Reading", "x": 0.5, "xanchor": "left"},
+            "title": {
+                "text": "AQI Reading",
+                "x": 0.05,
+                "xanchor": "left"
+            },
             "xaxis": {"fixedrange": True},
             "yaxis": {"fixedrange": True},
             "colorway": ["#E12D39"],
