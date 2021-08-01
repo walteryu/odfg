@@ -36,7 +36,9 @@ from dash.dependencies import Output, Input
 # data = pd.read_csv("avocado.csv")
 data = pd.read_csv("daily_42602_2021_no2.csv")
 # data = data.query("type == 'conventional' and region == 'Albany'")
+# data conversions
 data["ArithmeticMean"] = data["ArithmeticMean"].astype(float)
+data["AQI"] = data["AQI"].astype(int)
 data["Date"] = pd.to_datetime(data["Date"], format="%Y-%m-%d")
 data.sort_values("Date", inplace=True)
 
