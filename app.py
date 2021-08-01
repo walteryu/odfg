@@ -82,7 +82,7 @@ app.layout = html.Div(
                                 {"label": region, "value": region}
                                 for region in np.sort(data.region.unique())
                             ],
-                            value="Albany",
+                            value="Atlanta-Sandy Springs-Roswell, GA",
                             clearable=False,
                             className="dropdown",
                         ),
