@@ -51,7 +51,7 @@ external_stylesheets = [
     },
 ]
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
-app.title = "Avocado Analytics: Understand Your Avocados!"
+app.title = "2021 Open Data for Good: Grand Challenge"
 # need to set server for deployment
 server = app.server
 
