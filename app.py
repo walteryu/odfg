@@ -179,11 +179,11 @@ def update_charts(region, avocado_type, start_date, end_date):
         "layout": {
             "title": {
                 "text": "Daily Measurement (Arithmetic Mean)",
-                "x": 0.05,
+                "x": 0.5,
                 "xanchor": "left",
             },
             "xaxis": {"fixedrange": True},
-            "yaxis": {"tickprefix": "$", "fixedrange": True},
+            "yaxis": {"fixedrange": True},
             "colorway": ["#17B897"],
         },
     }
