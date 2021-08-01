@@ -186,12 +186,12 @@ def update_charts(region, avocado_type, start_date, end_date):
         "data": [
             {
                 "x": filtered_data["Date"],
-                "y": filtered_data["Total Volume"],
+                "y": filtered_data["AQI"],
                 "type": "lines",
             },
         ],
         "layout": {
-            "title": {"text": "Avocados Sold", "x": 0.05, "xanchor": "left"},
+            "title": {"text": "AQI Reading", "x": 0.05, "xanchor": "left"},
             "xaxis": {"fixedrange": True},
             "yaxis": {"fixedrange": True},
             "colorway": ["#E12D39"],
