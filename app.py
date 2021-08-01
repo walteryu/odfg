@@ -197,7 +197,7 @@ def update_charts(region, avocado_type, start_date, end_date):
             },
         ],
         "layout": {
-            "title": {"text": "AQI Reading", "x": 0.05, "xanchor": "left"},
+            "title": {"text": "AQI Reading", "x": 0.5, "xanchor": "left"},
             "xaxis": {"fixedrange": True},
             "yaxis": {"fixedrange": True},
             "colorway": ["#E12D39"],
