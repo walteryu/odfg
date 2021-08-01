@@ -65,13 +65,12 @@ app.layout = html.Div(
     children=[
         html.Div(
             children=[
-                html.P(children="🥑", className="header-emoji"),
+                html.P(children="😷", className="header-emoji"),
                 html.H1(
-                    children="Avocado Analytics", className="header-title"
+                    children="EPA Air Data Visualization", className="header-title"
                 ),
                 html.P(
-                    children="EPA Air Data Visualization"
-                    " Nitrogen Dioxide Measurements",
+                    children="Daily Monitoring Measurements",
                     className="header-description",
                 ),
             ],
