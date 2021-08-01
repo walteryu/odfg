@@ -165,14 +165,14 @@ def update_charts(region, avocado_type, start_date, end_date):
         "data": [
             {
                 "x": filtered_data["Date"],
-                "y": filtered_data["AveragePrice"],
+                "y": filtered_data["ArithmeticMean"],
                 "type": "lines",
                 "hovertemplate": "$%{y:.2f}<extra></extra>",
             },
         ],
         "layout": {
             "title": {
-                "text": "Average Price of Avocados",
+                "text": "Daily Measurement (Arithmetic Mean)",
                 "x": 0.05,
                 "xanchor": "left",
             },
